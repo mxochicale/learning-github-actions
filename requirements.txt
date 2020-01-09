@@ -2,4 +2,4 @@
 pytest
 numpy >=1.7.1
 bokeh
-scikit-learn
+sklearn
