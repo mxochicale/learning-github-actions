@@ -1,0 +1,3 @@
+# requirements for the bokeh app contained in this project
+pytest
+numpy >=1.7.1
