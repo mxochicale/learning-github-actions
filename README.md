@@ -7,7 +7,6 @@ USAGE:
 1. Create a new repository
 2. Create Tests scripts
 3. Select Actions
-
-
+4. Push changes
 
 
