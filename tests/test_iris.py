@@ -2,9 +2,7 @@
 
 import pytest
 import numpy as np
-
 from iris import IrisDataset
-
 
 @pytest.fixture(scope="module")
 def iris():
@@ -42,6 +40,7 @@ def test_targets(iris):
         ("virginica", "petal length (cm)", "petal width (cm)", [6, 5.1], [2.5, 1.9]),
     ],
 )
+
 def test_feature_values(iris, name, x_feature, y_feature, x_vals, y_vals):
     """ Test that the setting of feature values works as expected """
     iris.x_feature = x_feature
@@ -50,6 +49,4 @@ def test_feature_values(iris, name, x_feature, y_feature, x_vals, y_vals):
     data = iris.sources[name].data
     np.testing.assert_array_almost_equal(data["x"][:2], x_vals)
     np.testing.assert_array_almost_equal(data["y"][:2], y_vals)
-
-
 
