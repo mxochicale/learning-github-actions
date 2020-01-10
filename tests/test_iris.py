@@ -1,7 +1,5 @@
 """ Tests for the Iris dataset """
 
-# pylint: disable=redefined-outer-name
-
 import pytest
 import numpy as np
 
